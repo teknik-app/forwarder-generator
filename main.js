@@ -29,6 +29,8 @@ async function main () {
 
   let tidCounter = 0
 
+  let titles = {}
+
 
   for(dir of inputDirs) {
 
@@ -90,6 +92,7 @@ async function main () {
     }
 
     console.log(`Best match for ${file.name} is ${bestMatch.name} with a distance of ${bestMatch.distance}`)
+    console.log(bestMatch.path)
 
 
     // create TID
@@ -97,6 +100,18 @@ async function main () {
     let tid = tidPrefix + tidCounter.toString(16).padStart(16 - (tidPrefix.length) - (tidSuffix.length), '0') + tidSuffix
     tidCounter++
     console.log(`TID: ${tid}`)
+
+
+
+    // add to titledb
+
+    titles[tid.toUpperCase()] = {
+      "id": tid.toUpperCase(),
+      "name": name,
+      "iconUrl": `https://raw.githubusercontent.com/teknik-app/forwarder-images/main/${encodeURI(bestMatch.path.split('\\').join('/').split('/').slice(1).join('/'))}`,
+      "region": "US",
+      "description": `RetroArch forwarder for roms/${romFolder}/${name}.${ext}`,
+    }
 
 
     // figure out paths
@@ -170,15 +185,16 @@ async function main () {
   }
 
 
-
-
-
-  function readDirRecursive () { // reads a directory recursively and returns an array of files
+  fs.writeFileSync(path.join(__dirname, 'titles.json'), JSON.stringify(titles, null, 2))
+  
+  
+  
+  function readDirRecursive (dir) { // reads a directory recursively and returns an array of files
     let files = []
     for(file of fs.readdirSync(dir)) {
       let filePath = path.join(dir, file)
       let stat = fs.statSync(filePath)
-
+  
       if(stat.isDirectory()) {
         files.push(...readDirRecursive(filePath))
       } else {
@@ -188,6 +204,11 @@ async function main () {
     return files
   }
 
+  
 }
 
+
+
+
 main()
+

@@ -15,6 +15,11 @@
     "romFolder": "nes"
   },
   {
+    "extensions": ["chd"],
+    "emuNro": "flycast_libretro_libnx.nro",
+    "romFolder": "sdc"
+  },
+  {
     "extensions": ["sfc", "smc"],
     "emuNro": "snes9x_libretro_libnx.nro",
     "romFolder": "snes"
@@ -30,6 +35,16 @@
     "romFolder": "genesis"
   },
   {
+    "extensions": ["cso"],
+    "emuNro": "ppsspp_libretro_libnx.nro",
+    "romFolder": "psp"
+  },
+  {
+    "extensions": ["smd"],
+    "emuNro": "genesis_plus_gx_libretro_libnx.nro",
+    "romFolder": "sg"
+  },
+  {
     "extensions": ["sms"],
     "emuNro": "genesis_plus_gx_libretro_libnx.nro",
     "romFolder": "sms"
@@ -40,8 +55,13 @@
     "romFolder": "gg"
   },
   {
-    "extensions": ["n64"],
+    "extensions": ["n64", "z64"],
     "emuNro": "mupen64plus_libretro_libnx.nro",
     "romFolder": "n64"
+  },
+  {
+    "extensions": ["pbp"],
+    "emuNro": "pcsx_rearmed_libretro_libnx.nro",
+    "romFolder": "psx"
   }
 ]
