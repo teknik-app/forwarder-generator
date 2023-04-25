@@ -1,0 +1,47 @@
+[
+  {
+    "extensions": ["gba"],
+    "emuNro": "mgba_libretro_libnx.nro",
+    "romFolder": "gba"
+  },
+  {
+    "extensions": ["nds"],
+    "emuNro": "melonds_libretro_libnx.nro",
+    "romFolder": "nds"
+  },
+  {
+    "extensions": ["nes"],
+    "emuNro": "fceumm_libretro_libnx.nro",
+    "romFolder": "nes"
+  },
+  {
+    "extensions": ["sfc", "smc"],
+    "emuNro": "snes9x_libretro_libnx.nro",
+    "romFolder": "snes"
+  },
+  {
+    "extensions": ["gb", "gbc"],
+    "emuNro": "gearboy_libretro_libnx.nro",
+    "romFolder": "gb"
+  },
+  {
+    "extensions": ["gen"],
+    "emuNro": "genesis_plus_gx_libretro_libnx.nro",
+    "romFolder": "genesis"
+  },
+  {
+    "extensions": ["sms"],
+    "emuNro": "genesis_plus_gx_libretro_libnx.nro",
+    "romFolder": "sms"
+  },
+  {
+    "extensions": ["gg"],
+    "emuNro": "genesis_plus_gx_libretro_libnx.nro",
+    "romFolder": "gg"
+  },
+  {
+    "extensions": ["n64"],
+    "emuNro": "mupen64plus_libretro_libnx.nro",
+    "romFolder": "n64"
+  }
+]
