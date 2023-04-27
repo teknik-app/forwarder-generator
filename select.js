@@ -25,7 +25,7 @@ inquirer
 
 
 let inputDirs = [`./input/${answers.con}`]
-let imageDirs = ['./images']
+let imageDirs = [`./images/${answers.con}`]
 
 let tempDir = './temp'
 
