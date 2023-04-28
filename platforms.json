@@ -52,7 +52,7 @@
   {
     "extensions": ["gg"],
     "emuNro": "genesis_plus_gx_libretro_libnx.nro",
-    "romFolder": "gg"
+    "romFolder": "sgg"
   },
   {
     "extensions": ["n64", "z64"],
