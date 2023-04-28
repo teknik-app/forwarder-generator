@@ -30,7 +30,7 @@ let imageDirs = [`./images/${answers.con}`]
 let tempDir = './temp'
 
 let tidPrefix = `05${numb}`
-let tidSuffix = '000'
+let tidSuffix = '0000'
 
 let coresPrefix = 'sdmc:/retroarch/cores'
 let romsPrefix = 'sdmc:/roms'
