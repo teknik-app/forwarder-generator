@@ -11,7 +11,7 @@ let imageDirs = ['./images']
 let tempDir = './temp'
 
 let tidPrefix = '01337'
-let tidSuffix = '000'
+let tidSuffix = '0000'
 
 let coresPrefix = 'sdmc:/retroarch/cores'
 let romsPrefix = 'sdmc:/roms'
