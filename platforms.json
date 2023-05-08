@@ -56,7 +56,7 @@
   },
   {
     "extensions": ["n64", "z64"],
-    "emuNro": "mupen64plus_libretro_libnx.nro",
+    "emuNro": "mupen64plus_next_libretro_libnx.nro",
     "romFolder": "n64"
   },
   {
