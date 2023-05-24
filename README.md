@@ -41,3 +41,4 @@ if the proper folders inside input, output, and images are not present `main.js`
    ┣ 📂template
    ┗ 📂titles
 ```
+
